@@ -67,14 +67,10 @@ La aplicación es compatible con los navegadores web actuales y dispositivos mó
 - Agregar opción para establecer restricciones
 - Implementar guardado de datos en el navegador
 
-## Licencia
 
-Este proyecto está bajo la licencia MIT.
 
 ## Desarrollador
 
-Desarrollado por [Tu Nombre]
+Desarrollado por Martin
 
----
 
-Para cualquier problema o sugerencia, por favor contacta al desarrollador.
