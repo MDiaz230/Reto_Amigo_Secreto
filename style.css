@@ -1,0 +1,251 @@
+:root {
+    --color-primario: #4B69FD;
+    --color-secundario: #FFF9EB;
+    --color-terciario: #C4C4C4;
+    --color-boton: #fe652b;
+    --color-boton-hover: #e55720;
+    --color-texto: #444444;
+    --color-blanco: #FFFFFF;
+    --color-reiniciar: #dc3545;
+    --color-reiniciar-hover: #bb2d3b;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-principal {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Banner */
+.cabecera-banner {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0;
+}
+
+/* Sección de entrada */
+.seccion-entrada {
+    flex: 60%;
+    background-color: var(--color-secundario);
+    border: 1px solid #000;
+    border-radius: 64px 64px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Títulos */
+.titulo-principal {
+    font-size: 48px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--color-blanco);
+}
+
+.titulo-seccion {
+    font-family: "Inter", serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-primario);
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Contenedores de entrada y botón */
+.contenedor-entrada {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.entrada-nombre {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+}
+
+.contenedor-botones {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Estilos de entrada de texto */
+.titulo-entrada {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    font-family: "Merriweather", serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos de botón */
+button {
+    padding: 15px 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.boton-agregar {
+    background-color: var(--color-terciario);
+    color: var(--color-texto);
+    border-radius: 0 25px 25px 0;
+}
+
+.boton-agregar:hover {
+    background-color: #a1a1a1;
+}
+
+/* Listas */
+.lista-nombres {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+.item-nombre {
+    background-color: var(--color-terciario);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+    color: var(--color-texto);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.lista-resultado {
+    margin-top: 15px;
+    color: #05DF05;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.item-resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.etiqueta-resultado {
+    color: var(--color-texto);
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.nombre-resultado {
+    color: #05DF05;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Botón de sortear título */
+.boton-sortear {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-blanco);
+    background-color: var(--color-boton);
+    font-size: 16px;
+}
+
+.boton-sortear img {
+    margin-right: 40px;
+}
+
+.boton-sortear:hover {
+    background-color: var(--color-boton-hover);
+}
+
+/* Botón de reinicio */
+.boton-reiniciar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 1px 1px;
+    color: var(--color-blanco);
+    background-color: var(--color-reiniciar);
+    font-size: 16px;
+}
+
+.boton-reiniciar img {
+    margin-right: 80px;
+    
+}
+
+.boton-reiniciar:hover {
+    background-color: var(--color-reiniciar-hover);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .titulo-principal {
+        font-size: 36px;
+    }
+    
+    .titulo-seccion {
+        font-size: 24px;
+    }
+    
+    .contenedor-entrada {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .entrada-nombre {
+        border-radius: 25px;
+        margin-bottom: 10px;
+    }
+    
+    .boton-agregar {
+        border-radius: 25px;
+        width: 100%;
+    }
+}
